@@ -22,7 +22,7 @@ public class DishController {
     }
 
     @GetMapping(path = "/list/{categoryId}", produces = "application/json")
-    public ResponseEntity<List<Dish>> getCuisines(@PathVariable Long categoryId) {
-        return new ResponseEntity<>(service.getAll(), HttpStatus.OK);
+    public ResponseEntity<List<Dish>> getDishesByCategory(@PathVariable Long categoryId) {
+        return new ResponseEntity<>(service.findByCategoryId(categoryId), HttpStatus.OK);
     }
 }

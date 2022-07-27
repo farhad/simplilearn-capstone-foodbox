@@ -1,13 +1,12 @@
 package food.box.category;
 
-import food.box.dish.Dish;
+import food.box.base.IModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -15,7 +14,7 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "categories")
-public class Category {
+public class Category implements IModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -27,7 +26,4 @@ public class Category {
 
     @Column(name = "description", nullable = false)
     private String description;
-
-    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
-    private List<Dish> dishes;
 }

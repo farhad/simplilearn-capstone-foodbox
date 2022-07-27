@@ -15,7 +15,7 @@ public class DishService {
         this.repository = repository;
     }
 
-    public List<Dish> getAll() {
-        return repository.findAll();
+    public List<Dish> findByCategoryId(Long categoryId) {
+        return repository.findByCategoryId(categoryId);
     }
 }

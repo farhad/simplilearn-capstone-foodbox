@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+import static food.box.fixture.CategoryFixture.testCategory;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
@@ -24,12 +25,7 @@ public class CategoryControllerTest {
     @Test
     public void it_returns_list_of_categories() {
         // arrange
-        Category testCategory = Category.builder()
-                .id(1L)
-                .title("test title")
-                .description("test description")
-                .build();
-
+        Category testCategory = testCategory();
         CategoryController controller = new CategoryController(service);
 
         // act
