@@ -1,11 +1,13 @@
 package food.box.category;
 
+import food.box.dish.Dish;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -25,4 +27,7 @@ public class Category {
 
     @Column(name = "description", nullable = false)
     private String description;
+
+    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
+    private List<Dish> dishes;
 }

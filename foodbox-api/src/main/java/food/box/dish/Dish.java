@@ -1,6 +1,7 @@
 package food.box.dish;
 
 import food.box.base.IModel;
+import food.box.category.Category;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,12 +25,13 @@ public class Dish implements IModel {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "country", nullable = false)
-    private String country;
+    @ManyToOne
+    @JoinColumn(name = "category_id", nullable = false)
+    private Category category;
 
-    @Column(name = "image_path", nullable = false)
+    @Column(name = "image_path")
     private String imagePath;
 
-    @Column(name = "description", nullable = false)
+    @Column(name = "description")
     private String description;
 }
