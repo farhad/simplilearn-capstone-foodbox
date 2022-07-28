@@ -18,4 +18,16 @@ public class DishService {
     public List<Dish> findByCategoryId(Long categoryId) {
         return repository.findByCategoryId(categoryId);
     }
+
+    public Dish add(Dish dish) {
+        return repository.save(dish);
+    }
+
+    public Dish update(Dish dish) {
+        return repository.save(dish);
+    }
+
+    public void delete(Long dishId) {
+        repository.deleteById(dishId);
+    }
 }
