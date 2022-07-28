@@ -18,4 +18,16 @@ public class CategoryService {
     public List<Category> getAll() {
         return repository.findAll();
     }
+
+    public Category add(Category category) {
+        return repository.save(category);
+    }
+
+    public Category update(Category category) {
+        return repository.save(category);
+    }
+
+    public void delete(Long id) {
+        repository.deleteById(id);
+    }
 }
