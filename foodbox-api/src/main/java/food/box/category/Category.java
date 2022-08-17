@@ -1,14 +1,14 @@
 package food.box.category;
 
 import food.box.base.IModel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import food.box.dish.Dish;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.Set;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -26,4 +26,7 @@ public class Category implements IModel {
 
     @Column(name = "description", nullable = false)
     private String description;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
+    private Set<Dish> dishes;
 }
