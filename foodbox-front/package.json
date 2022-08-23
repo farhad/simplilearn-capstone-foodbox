@@ -1,6 +1,6 @@
 {
   "name": "foodbox-front",
-  "version": "0.0.0",
+  "version": "14.5.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
