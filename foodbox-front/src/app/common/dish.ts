@@ -5,4 +5,5 @@ export interface Dish {
   description: string,
   createdAt: Date,
   updatedAt: Date,
+  price: number
 }

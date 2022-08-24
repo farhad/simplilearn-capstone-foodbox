@@ -1,1 +1,20 @@
-<p>dish-list works!</p>
+<div class="main-content">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div *ngFor="let dishItem of dishes" class="col-md-3">
+
+          <div class="product-box">
+            <img src="{{dishItem.imagePath}}" class="img-responsive">
+            <h4>{{dishItem.name}}</h4>
+            <h1>{{dishItem.description}}</h1>
+            <div class="price">{{dishItem.price | currency:'CAD'}}</div>
+            <a href="#" class="primary-btn">Add to cart</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

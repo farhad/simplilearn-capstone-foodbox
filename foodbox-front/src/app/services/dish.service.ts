@@ -1,24 +1,24 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {map, Observable} from "rxjs";
-import {Category} from "../common/category";
+import {Dish} from "../common/dish";
 import {environment} from "../../environments/environment";
 
 @Injectable({providedIn: 'root'})
 
-export class CategoryService {
-  private listUrl = `${environment.apiBaseUrl}/category`
+export class DishService {
+  private listUrl = `${environment.apiBaseUrl}/dish`
 
   constructor(private http: HttpClient) {
   }
 
-  public getCategories(): Observable<Category[]> {
-    return this.http.get<GetResponse>(this.listUrl).pipe(map(response => response._embedded.category));
+  public getDishes(): Observable<Dish[]> {
+    return this.http.get<GetResponse>(this.listUrl).pipe(map(response => response._embedded.dish));
   }
 }
 
 interface GetResponse {
   _embedded: {
-    "category": Category[]
+    "dish": Dish[]
   }
 }

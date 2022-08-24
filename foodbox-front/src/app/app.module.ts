@@ -3,6 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
 import {CategoryService} from "./services/category.service";
+import {DishService} from "./services/dish.service";
 import {HttpClientModule} from "@angular/common/http";
 import {DishListComponent} from './components/dish-list/dish-list.component';
 import {CategoryListComponent} from './components/category-list/category-list.component';
@@ -17,7 +18,7 @@ import {CategoryListComponent} from './components/category-list/category-list.co
     BrowserModule,
     HttpClientModule
   ],
-  providers: [CategoryService],
+  providers: [CategoryService, DishService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

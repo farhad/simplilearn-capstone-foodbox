@@ -8,6 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Getter
@@ -45,4 +46,7 @@ public class Dish implements IModel {
     @Column(name = "updated_at")
     @UpdateTimestamp
     private Date updatedAt;
+
+    @Column(name = "price")
+    private BigDecimal price;
 }
