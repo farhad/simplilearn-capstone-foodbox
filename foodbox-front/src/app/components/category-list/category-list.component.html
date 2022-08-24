@@ -1,3 +1,8 @@
-<p *ngFor="let item of categories">
-  {{item.title}}
-</p>
+<table class="table">
+  <tbody>
+  <tr *ngFor="let item of categories">
+    <button type="button" class="btn btn-primary btn-outline-primary"
+            href="http://localhost:8080/api/category/">{{item.title}}</button>
+  </tr>
+  </tbody>
+</table>
