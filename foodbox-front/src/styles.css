@@ -1131,4 +1131,10 @@ footer ul li {
     border: 0;
     padding: 8px 0
   }
+
+  a.custom {
+    text-decoration: none !important;
+    min-width: 80px !important;
+    max-width: 80px !important;
+  }
 }

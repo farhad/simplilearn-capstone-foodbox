@@ -12,8 +12,10 @@ export class DishService {
   constructor(private http: HttpClient) {
   }
 
-  public getDishes(): Observable<Dish[]> {
-    return this.http.get<GetResponse>(this.listUrl).pipe(map(response => response._embedded.dish));
+  public getDishes(categoryId: number): Observable<Dish[]> {
+    const url = `${this.listUrl}/search/findDishByCategoryId?id=${categoryId}` ;
+    console.log('calling -> ' + url);
+    return this.http.get<GetResponse>(url).pipe(map(response => response._embedded.dish));
   }
 }
 

@@ -7,11 +7,8 @@
         <img src="assets/images/foodbox-logo.png" alt="FoodBox" class="img-responsive">
       </a>
     </div>
-    <div class="menu-sidebar-content js-scrollbar1">
-      <nav class="navbar-sidebar">
-        <app-category-list></app-category-list>
-      </nav>
-    </div>
+    <app-category-list></app-category-list>
+
   </aside>
   <!-- END MENU SIDEBAR-->
 </div>
@@ -43,7 +40,7 @@
   <!-- END HEADER DESKTOP-->
 
   <!-- Main content section -->
-  <app-dish-list></app-dish-list>
+  <router-outlet></router-outlet>
 </div>
 
 <!-- END PAGE CONTAINER-->

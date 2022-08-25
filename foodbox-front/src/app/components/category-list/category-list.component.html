@@ -1,8 +1,9 @@
-<table class="table">
-  <tbody>
-  <tr *ngFor="let item of categories">
-    <button type="button" class="btn btn-primary btn-outline-primary"
-            href="http://localhost:8080/api/category/">{{item.title}}</button>
-  </tr>
-  </tbody>
-</table>
+<div class="menu-sidebar-content js-scrollbar-1">
+  <nav class="navbar-sidebar">
+    <ul class="list-unstyled navbar-list">
+      <li *ngFor="let item of categories" >
+        <a routerLink="category/{{ item.id }}" routerLinkActive="active-link">{{item.title}}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
