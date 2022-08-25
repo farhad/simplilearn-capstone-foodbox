@@ -5,10 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("/dish")
 public class DishController {
 
     private final DishService service;
@@ -16,11 +13,6 @@ public class DishController {
     @Autowired
     public DishController(DishService service) {
         this.service = service;
-    }
-
-    @GetMapping(path = "/list/{categoryId}", produces = "application/json")
-    public ResponseEntity<List<Dish>> getDishesByCategory(@PathVariable Long categoryId) {
-        return new ResponseEntity<>(service.findByCategoryId(categoryId), HttpStatus.OK);
     }
 
     @PostMapping(path = "/add", produces = "application/json", consumes = "application/json")
