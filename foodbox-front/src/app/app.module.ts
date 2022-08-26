@@ -8,9 +8,11 @@ import {HttpClientModule} from "@angular/common/http";
 import {DishListComponent} from './components/dish-list/dish-list.component';
 import {CategoryListComponent} from './components/category-list/category-list.component';
 import {RouterModule, Routes} from "@angular/router";
+import {DishDetailComponent} from './components/dish-detail/dish-detail.component';
 
 const routes: Routes = [
   {path: 'category/:id', component: DishListComponent},
+  {path: 'dish/:id', component: DishDetailComponent},
   {path: 'category', component: DishListComponent},
   {path: 'dish', component: DishListComponent},
   {path: '', redirectTo: '/dish', pathMatch: "full"},
@@ -21,7 +23,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     DishListComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    DishDetailComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

@@ -6,9 +6,16 @@
         <div *ngFor="let dishItem of dishes" class="col-md-3">
 
           <div class="product-box">
-            <img src="{{dishItem.imagePath}}" class="img-responsive" alt="{{dishItem.name}}">
-            <h4 class="mt-2">{{dishItem.name}}</h4>
+            <a routerLink="/dish/{{dishItem.id}}">
+              <img src="{{dishItem.imagePath}}" class="img-responsive">
+            </a>
+            <br/>
+            <a class="mt-2 text-decoration-none" routerLink="/dish/{{dishItem.id}}">
+              <h4 class="mt-2">{{dishItem.name}}</h4>
+            </a>
+
             <div class="price">{{dishItem.price | currency:'CAD'}}</div>
+
             <a href="#" class="primary-btn text-decoration-none">Add to cart</a>
           </div>
         </div>

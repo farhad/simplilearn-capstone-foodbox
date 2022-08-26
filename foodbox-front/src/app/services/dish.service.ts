@@ -13,9 +13,13 @@ export class DishService {
   }
 
   public getDishes(categoryId: number): Observable<Dish[]> {
-    const url = `${this.listUrl}/search/findDishByCategoryId?id=${categoryId}` ;
-    console.log('calling -> ' + url);
+    const url = `${this.listUrl}/search/findDishByCategoryId?id=${categoryId}`;
     return this.http.get<GetResponse>(url).pipe(map(response => response._embedded.dish));
+  }
+
+  public getDishDetails(dishId: number): Observable<Dish> {
+    const url = `${this.listUrl}/${dishId}`;
+    return this.http.get<Dish>(url);
   }
 }
 

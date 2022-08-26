@@ -1,9 +1,7 @@
-export interface Dish {
-  id: number,
-  name: string,
-  imagePath: string,
-  description: string,
-  createdAt: Date,
-  updatedAt: Date,
-  price: number
+export class Dish {
+  id!: number;
+  name!: string;
+  imagePath!: string;
+  description!: string;
+  price!: number;
 }
