@@ -106,12 +106,12 @@ a, a:hover {
 
 .page-wrapper {
   overflow: hidden;
-  background: #e5e5e5;
+  background: #F2F3F3;
   padding-bottom: 8vh
 }
 
 .page-container {
-  background: #e5e5e5;
+  background: #F2F3F3;
   padding-left: 200px
 }
 
@@ -134,7 +134,7 @@ aside.menu-sidebar.d-none.d-lg-block.clr {
  */
 
 .header-desktop {
-  background: #F44336;
+  background: #F2F3F3;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
@@ -224,7 +224,7 @@ input.au-input.au-input-xl {
 
 .au-input {
   line-height: 43px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #F2F3F3;
   font-size: 14px;
   color: #666;
   padding: 0 17px;
@@ -245,16 +245,16 @@ input.au-input.au-input-xl {
   font-size: 22px;
   float: left;
   margin-top: 16px;
-  color: #fff;
+  color: #F2F3F3;
   margin-left: 15px
 }
 
 .total {
   background: #4CAF50;
   line-height: 43px;
-  color: #fff;
+  color: #F2F3F3;
   border-radius: 30px;
-  border: 1px solid #F44336;
+  border: 1px solid #4CAF50;
   float: left;
   margin-top: 7px;
   padding-left: 17px
@@ -262,7 +262,7 @@ input.au-input.au-input-xl {
 
 .total span {
   display: inline-block;
-  background: #fff;
+  background: #F2F3F3;
   padding: 0 13px;
   color: #000;
   border-top-right-radius: 20px;
@@ -282,7 +282,7 @@ input.au-input.au-input-xl {
   position: relative;
   right: 0;
   min-width: 95px;
-  color: #fff;
+  color: #F2F3F3;
   border: 1px solid #4CAF50;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -291,12 +291,12 @@ input.au-input.au-input-xl {
 }
 
 .au-btn-submit:hover {
-  background: #05143f
+  background: #4CAF50
 }
 
 .au-btn-submit > i {
   font-size: 20px;
-  color: #fff;
+  color: #F2F3F3;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -319,12 +319,12 @@ input.au-input.au-input-xl {
   left: 0;
   top: 0;
   bottom: 0;
-  background: #fff;
+  background: #F2F3F3;
   overflow-y: auto
 }
 
 .menu-sidebar .logo {
-  background: #fff;
+  background: #F2F3F3;
   height: 75px;
   padding: 0 35px;
   display: -webkit-box;
@@ -340,7 +340,7 @@ input.au-input.au-input-xl {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-  border-right: 1px solid #e5e5e5;
+  border-right: 1px solid #F2F3F3;
   position: relative;
   z-index: 3
 }
@@ -378,7 +378,7 @@ input.au-input.au-input-xl {
 }
 
 .navbar-sidebar .navbar-list li a:hover {
-  color: #F44336
+  color: #F2F3F3;
 }
 
 /*
@@ -396,7 +396,7 @@ input.au-input.au-input-xl {
 
 .header-mobile .header-mobile-bar {
   padding: 15px 0;
-  background: #fff;
+  background: #F2F3F3;
 }
 
 .header-mobile .header-mobile-inner {
@@ -423,7 +423,7 @@ input.au-input.au-input-xl {
   padding: 0;
   line-height: 1;
   vertical-align: top;
-  background: #fff;
+  background: #F2F3F3;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -494,7 +494,7 @@ input.au-input.au-input-xl {
 }
 
 .header-mobile .navbar-mobile .navbar-mobile-list li a:hover {
-  color: #F44336
+  color: #F2F3F3;
 }
 
 .header-mobile .navbar-mobile .navbar-mobile-list li a > i {
@@ -504,7 +504,7 @@ input.au-input.au-input-xl {
 .navbar-mobile-sub-list {
   display: none;
   padding-left: 30px;
-  background: #fff
+  background: #F2F3F3
 }
 
 .header-mobile .navbar-mobile .navbar-mobile-sub-list li a {
@@ -525,15 +525,15 @@ input.au-input.au-input-xl {
 }
 
 .header-mobile-2.header-mobile .hamburger .hamburger-box .hamburger-inner {
-  background: #fff
+  background: #F2F3F3
 }
 
 .header-mobile-2.header-mobile .hamburger .hamburger-box .hamburger-inner::before {
-  background: #fff
+  background: #F2F3F3
 }
 
 .header-mobile-2.header-mobile .hamburger .hamburger-box .hamburger-inner::after {
-  background: #fff
+  background: #F2F3F3
 }
 
 .main-content.page-m {
@@ -572,7 +572,7 @@ input.au-input.au-input-xl {
 
 .product-box h1 {
   font-size: 18px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #F2F3F3;
   padding-bottom: 5px;
   font-weight: 600;
   padding-top: 12px;
@@ -593,18 +593,18 @@ input.au-input.au-input-xl {
  */
 
 .form-area {
-  background: #e5e5e5;
+  background: #F2F3F3;
   position: relative;
   margin-bottom: 45px;
   padding: 50px 20px;
-  border: 3px solid #ccc
+  border: 3px solid #F2F3F3
 }
 
 .form-area h3 {
   position: absolute;
   top: -26px;
   left: 13px;
-  background: #e5e5e5;
+  background: #F2F3F3;
   padding: 10px 20px;
   font-weight: 500;
   z-index: 23;
@@ -627,7 +627,7 @@ input.au-input.au-input-xl {
   border-radius: 30px;
   outline: 0;
   padding: 10px;
-  border: 1px solid #ccc
+  border: 1px solid #F2F3F3
 }
 
 .input-space select {
@@ -636,7 +636,7 @@ input.au-input.au-input-xl {
   border-radius: 30px;
   outline: 0;
   padding: 0 10px;
-  border: 1px solid #ccc
+  border: 1px solid #F2F3F3
 }
 
 .au-checkbox {
@@ -662,8 +662,8 @@ input.au-input.au-input-xl {
   left: 0;
   height: 22px;
   width: 22px;
-  background-color: #fff !important;
-  border: 2px solid #e5e5e5;
+  background-color: #F2F3F3 !important;
+  border: 2px solid #F2F3F3;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px
@@ -674,7 +674,7 @@ input.au-input.au-input-xl {
 }
 
 .au-checkbox input:checked ~ .au-checkmark {
-  background-color: #fff
+  background-color: #F2F3F3
 }
 
 .au-checkmark:after {
@@ -709,7 +709,7 @@ label.date {
 }
 
 option:first {
-  color: #ccc
+  color: #F2F3F3
 }
 
 select {
@@ -727,8 +727,8 @@ select {
 }
 
 table.table.table-bordered {
-  border: 1px solid #ccc;
-  background: #fff
+  border: 1px solid #F2F3F3;
+  background: #F2F3F3
 }
 
 .table-bordered td, .table-bordered th {
@@ -737,7 +737,7 @@ table.table.table-bordered {
 
 table.table.table-bordered th {
   BACKGROUND: #F44336;
-  color: #fff;
+  color: #F2F3F3;
   font-size: 14px;
   padding: 7px
 }
@@ -782,17 +782,17 @@ table.table.table-bordered th {
  */
 
 .btn-info {
-  color: #fff;
+  color: #F2F3F3;
   background-color: #F44336 !important;
   border-color: #F44336 !important
 }
 
 a.primary-btn {
-  background: #05143f;
+  background: #4CAF50;
   padding: 7px 20px;
   text-align: center;
   display: inline-block;
-  color: #fff;
+  color: #F2F3F3;
   border-radius: 2px;
   font-size: 14px;
   margin-top: 5px
@@ -800,7 +800,7 @@ a.primary-btn {
 
 a.primary-btn:hover {
   background: #F44336;
-  color: #fff
+  color: #F2F3F3
 }
 
 .active-link {
@@ -814,7 +814,7 @@ a.primary-btn:hover {
  */
 
 footer ul li a {
-  color: #fff
+  color: #F2F3F3
 }
 
 footer {
@@ -887,7 +887,7 @@ footer ul li {
 
   .header-mobile .header-mobile-bar {
     padding: 10px 0;
-    background: #fff
+    background: #F2F3F3
   }
 
   .header-wrap .account-item > .content {
@@ -908,7 +908,7 @@ footer ul li {
   }
 
   .page-wrapper {
-    background: #e5e5e5;
+    background: #F2F3F3;
     padding-bottom: 12vh
   }
 
@@ -1075,7 +1075,7 @@ footer ul li {
     position: relative;
     right: 10px;
     min-width: 85px;
-    color: #fff;
+    color: #F2F3F3;
     border: 1px solid #4CAF50;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1106,7 +1106,7 @@ footer ul li {
 
   .total span {
     display: inline-block;
-    background: #fff;
+    background: #F2F3F3;
     padding: 0 10px;
     color: #000;
     border-top-right-radius: 20px;
@@ -1117,7 +1117,7 @@ footer ul li {
   .total {
     background: #4CAF50;
     line-height: 30px;
-    color: #fff;
+    color: #F2F3F3;
     border-radius: 30px;
     border: 1px solid #4CAF50;
     float: left;
@@ -1127,7 +1127,7 @@ footer ul li {
 
   .header-mobile .header-mobile-bar {
     padding: 6px 0;
-    background: #fff;
+    background: #F2F3F3;
     border: 0;
     padding: 8px 0
   }
@@ -1136,5 +1136,9 @@ footer ul li {
     text-decoration: none !important;
     min-width: 80px !important;
     max-width: 80px !important;
+  }
+
+  .nounderline {
+    text-decoration: none !important;
   }
 }
