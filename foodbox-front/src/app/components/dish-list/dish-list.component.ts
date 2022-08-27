@@ -14,7 +14,7 @@ export class DishListComponent implements OnInit {
 
   public dishes!: Dish[]
   // @ts-ignore
-  private currentCategoryId: number;
+  currentCategoryId: number;
 
   constructor(private dishService: DishService,
               private cartService: CartService,
@@ -35,7 +35,14 @@ export class DishListComponent implements OnInit {
       this.currentCategoryId = 1;
     }
 
-    this.dishService.getDishes(this.currentCategoryId).subscribe(data => this.dishes = data)
+    this.dishService.getDishes(this.currentCategoryId).subscribe(data => {
+      this.dishes = data
+      this.dishes.forEach(item => {
+        let index = this.dishes.indexOf(item)
+        item.categoryId = this.currentCategoryId
+        this.dishes[index] = item
+      })
+    })
   }
 
   addToCart(dish: Dish) {

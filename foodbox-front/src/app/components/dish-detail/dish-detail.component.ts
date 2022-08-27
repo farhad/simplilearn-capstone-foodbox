@@ -29,7 +29,13 @@ export class DishDetailComponent implements OnInit {
     // @ts-ignore
     const dishId: number = +this.route.snapshot.paramMap.get('id');
 
-    this.dishService.getDishDetails(dishId).subscribe(data => this.dish = data);
+    this.dishService.getDishDetails(dishId).subscribe(data => {
+        // @ts-ignore
+        const categoryId: number = +this.route.snapshot.paramMap.get('categoryId');
+        this.dish = data
+        this.dish.categoryId = categoryId
+      }
+    );
   }
 
   addToCart() {

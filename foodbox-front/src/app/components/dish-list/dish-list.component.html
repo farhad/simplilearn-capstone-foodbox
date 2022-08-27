@@ -6,7 +6,7 @@
         <div *ngFor="let dishItem of dishes" class="col-md-3">
 
           <div class="product-box">
-            <a routerLink="/dish/{{dishItem.id}}">
+            <a routerLink="/dish/{{dishItem.id}}/{{currentCategoryId}}">
               <img src="{{dishItem.imagePath}}" class="img-responsive">
             </a>
             <br/>

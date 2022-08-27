@@ -4,4 +4,5 @@ export class Dish {
   imagePath!: string;
   description!: string;
   price!: number;
+  categoryId!: number;
 }

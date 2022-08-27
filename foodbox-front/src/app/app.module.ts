@@ -11,11 +11,13 @@ import {RouterModule, Routes} from "@angular/router";
 import {DishDetailComponent} from './components/dish-detail/dish-detail.component';
 import {CartStatusComponent} from './components/cart-status/cart-status.component';
 import {CartDetailsComponent} from './components/cart-details/cart-details.component';
+import {CheckoutComponent} from './components/checkout/checkout.component';
 
 const routes: Routes = [
+  {path: 'checkout', component: CheckoutComponent},
   {path: 'cart-details', component: CartDetailsComponent},
   {path: 'category/:id', component: DishListComponent},
-  {path: 'dish/:id', component: DishDetailComponent},
+  {path: 'dish/:id/:categoryId', component: DishDetailComponent},
   {path: 'category', component: DishListComponent},
   {path: 'dish', component: DishListComponent},
   {path: '', redirectTo: '/dish', pathMatch: "full"},
@@ -29,7 +31,8 @@ const routes: Routes = [
     CategoryListComponent,
     DishDetailComponent,
     CartStatusComponent,
-    CartDetailsComponent
+    CartDetailsComponent,
+    CheckoutComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
