@@ -9,6 +9,7 @@ import {DishListComponent} from './components/dish-list/dish-list.component';
 import {CategoryListComponent} from './components/category-list/category-list.component';
 import {RouterModule, Routes} from "@angular/router";
 import {DishDetailComponent} from './components/dish-detail/dish-detail.component';
+import {CartStatusComponent} from './components/cart-status/cart-status.component';
 
 const routes: Routes = [
   {path: 'category/:id', component: DishListComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
     AppComponent,
     DishListComponent,
     CategoryListComponent,
-    DishDetailComponent
+    DishDetailComponent,
+    CartStatusComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {Dish} from "../../common/dish";
 import {DishService} from "../../services/dish.service";
 import {ActivatedRoute} from "@angular/router";
+import {CartService} from "../../services/cart.service";
+import {CartItem} from "../../common/cart-item";
 
 @Component({
   selector: 'app-dish-detail',
@@ -13,6 +15,7 @@ export class DishDetailComponent implements OnInit {
   dish: Dish = new Dish();
 
   constructor(private dishService: DishService,
+              private cartService: CartService,
               private route: ActivatedRoute) {
   }
 
@@ -27,5 +30,9 @@ export class DishDetailComponent implements OnInit {
     const dishId: number = +this.route.snapshot.paramMap.get('id');
 
     this.dishService.getDishDetails(dishId).subscribe(data => this.dish = data);
+  }
+
+  addToCart() {
+    this.cartService.addToCart(new CartItem(this.dish));
   }
 }

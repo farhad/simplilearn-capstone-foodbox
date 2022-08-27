@@ -16,7 +16,8 @@
 
             <div class="price">{{dishItem.price | currency:'CAD'}}</div>
 
-            <a href="#" class="primary-btn text-decoration-none">Add to cart</a>
+            <button class="btn btn-primary btn-sm text-decoration-none mt-2" (click)="addToCart(dishItem)">Add to cart
+            </button>
           </div>
         </div>
 

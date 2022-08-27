@@ -4,7 +4,7 @@
     <img src="{{dish.imagePath}}" class="detail-img mt-4" alt="{{dish.name}}"/>
     <h3>{{dish.name}}</h3>
     <div class="price">{{dish.price | currency: 'CAD'}}</div>
-    <a href="#" class="primary-btn">Add to cart</a>
+    <button class="btn btn-primary btn-sm text-decoration-none mt-2" (click)="addToCart()">Add to cart</button>
     <hr>
     <h4>Description</h4>
     <p>{{dish.description}}</p>

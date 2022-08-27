@@ -1,7 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import { DishService} from "../../services/dish.service";
+import {DishService} from "../../services/dish.service";
 import {Dish} from "../../common/dish";
 import {ActivatedRoute} from "@angular/router";
+import {CartService} from "../../services/cart.service";
+import {CartItem} from "../../common/cart-item";
 
 @Component({
   selector: 'app-dish-list',
@@ -15,6 +17,7 @@ export class DishListComponent implements OnInit {
   private currentCategoryId: number;
 
   constructor(private dishService: DishService,
+              private cartService: CartService,
               private route: ActivatedRoute) {
   }
 
@@ -33,5 +36,9 @@ export class DishListComponent implements OnInit {
     }
 
     this.dishService.getDishes(this.currentCategoryId).subscribe(data => this.dishes = data)
+  }
+
+  addToCart(dish: Dish) {
+    this.cartService.addToCart(new CartItem(dish));
   }
 }
