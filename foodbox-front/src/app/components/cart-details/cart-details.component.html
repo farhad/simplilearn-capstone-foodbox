@@ -1,0 +1,50 @@
+<div class="main-content">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid">
+      <div *ngIf="cartItems.length > 0">
+        <table class="table table-bordered">
+          <thead>
+          <th>Image</th>
+          <th>Details</th>
+          <th>Quantity</th>
+          </thead>
+
+          <tbody>
+          <tr *ngFor="let item of cartItems">
+            <td>
+              <img src="{{ item.imageUrl }}" class="img-responsive" width="150px">
+            </td>
+            <td>
+              <p>{{item.name}}</p>
+              <p>{{ item.unitPrice | currency: 'CAD'}}</p>
+            </td>
+
+            <td>
+              <p>{{item.quantity}}</p>
+              <p>{{item.quantity * item.unitPrice | currency: 'CAD'}}</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td style="font-weight: bold">
+              <p>Total Quantity: {{ totalQuantity }}</p>
+              <p>Shipping Cost: FREE</p>
+              <p>Total Price: {{ totalPrice | currency: 'CAD'}}</p>
+            </td>
+          </tr>
+          </tbody>
+
+        </table>
+      </div>
+
+      <div *ngIf="cartItems.length == 0" class="alert alert-warning col-md-12" role="alert">
+        <p>Oh No! your shopping cart is empty. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

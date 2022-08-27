@@ -727,16 +727,16 @@ select {
 }
 
 table.table.table-bordered {
-  border: 1px solid #F2F3F3;
+  border: 1px solid #ffc400;
   background: #F2F3F3
 }
 
 .table-bordered td, .table-bordered th {
-  border: 1px solid #dee2e6
+  border: 1px solid #ffc400
 }
 
 table.table.table-bordered th {
-  BACKGROUND: #F44336;
+  BACKGROUND: #ffc400;
   color: #F2F3F3;
   font-size: 14px;
   padding: 7px

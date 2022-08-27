@@ -10,8 +10,10 @@ import {CategoryListComponent} from './components/category-list/category-list.co
 import {RouterModule, Routes} from "@angular/router";
 import {DishDetailComponent} from './components/dish-detail/dish-detail.component';
 import {CartStatusComponent} from './components/cart-status/cart-status.component';
+import {CartDetailsComponent} from './components/cart-details/cart-details.component';
 
 const routes: Routes = [
+  {path: 'cart-details', component: CartDetailsComponent},
   {path: 'category/:id', component: DishListComponent},
   {path: 'dish/:id', component: DishDetailComponent},
   {path: 'category', component: DishListComponent},
@@ -26,7 +28,8 @@ const routes: Routes = [
     DishListComponent,
     CategoryListComponent,
     DishDetailComponent,
-    CartStatusComponent
+    CartStatusComponent,
+    CartDetailsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
