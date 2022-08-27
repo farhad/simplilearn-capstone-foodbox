@@ -1,1 +1,50 @@
-<p>checkout works!</p>
+<div class="main-content">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid">
+      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+        <div formGroupName="customer" class="form-area">
+          <h3>Customer</h3>
+          <div class="row">
+            <div class="col-md-2">
+              <label>Full Name: </label>
+            </div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="fullName" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">
+              <label>Phone Number: </label>
+            </div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="phoneNumber" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">
+              <label>Address: </label>
+            </div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="Address" type="text">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Place Order</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
